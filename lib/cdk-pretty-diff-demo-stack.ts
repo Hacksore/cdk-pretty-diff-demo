@@ -12,7 +12,7 @@ export class CdkPrettyDiffDemoStack extends cdk.Stack {
 
     // test bucket
     bucket.addLifecycleRule({
-      expiration: cdk.Duration.days(365),
+      expiration: cdk.Duration.days(69),
     });
 
   }
