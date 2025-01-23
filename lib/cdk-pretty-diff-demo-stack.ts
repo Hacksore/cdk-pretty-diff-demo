@@ -6,7 +6,14 @@ export class CdkPrettyDiffDemoStack extends cdk.Stack {
     super(scope, id, props);
     
     // create s3 bucket
-    const bucket = new
+    const bucket = new cdk.aws_s3.Bucket(this, 'MyFirstBucket', {
+      versioned: true,
+    });
+
+    // test bucket
+    bucket.addLifecycleRule({
+      expiration: cdk.Duration.days(365),
+    });
 
   }
 }
