@@ -1,6 +1,5 @@
-#!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { CdkPrettyDiffDemoStack } from '../lib/cdk-pretty-diff-demo-stack';
+import { CdkPrettyDiffDemoStack } from './cdk-pretty-diff-demo-stack';
 
 const app = new cdk.App();
 new CdkPrettyDiffDemoStack(app, 'CdkPrettyDiffDemoStack', {
