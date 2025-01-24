@@ -6,7 +6,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "diff": "node diff.cjs"
+    "diff": "tsx diff.ts"
   },
   "devDependencies": {
     "@aws-sdk/client-appsync": "^3.731.1",
